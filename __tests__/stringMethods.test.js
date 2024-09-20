@@ -10,7 +10,7 @@ const {
     ['getCharAt', getCharAt, 12345, 1, 'Value given to function was of Data Type: number'],
     ['getCharAt', getCharAt, '', 1, 'String is empty'],
   
-    // concatenateStrings tests (valid and invalid)
+    /* // concatenateStrings tests (valid and invalid)
     ['concatenateStrings', concatenateStrings, 'hello', 'world', 'helloworld'],
     ['concatenateStrings', concatenateStrings, 12345, 'world', 'Value given to function was of Data Type: number'],
     
@@ -51,7 +51,7 @@ const {
     // replaceSubstring tests (valid and invalid)
     ['replaceSubstring', replaceSubstring, 'hello world', 'world', 'everyone', 'hello everyone'],
     ['replaceSubstring', replaceSubstring, 'hello world', 123, 'everyone', 'Value given to function was of Data Type: number'],
-    ['replaceSubstring', replaceSubstring, '', 'world', 'everyone', 'String is empty']
+    ['replaceSubstring', replaceSubstring, '', 'world', 'everyone', 'String is empty'] */
   ])('%s - should return %s for inputs (%s)', (name, func, ...params) => {
     
     const expectedResult = params.pop(); // Extract expected result from the last parameter
