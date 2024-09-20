@@ -23,6 +23,18 @@ function concatenateStrings(str1, str2) {
 }
 
 
+// .includes = check if an array contains a specified value
+
+function doesInclude(str1, str2) {
+    if (str1 && str2 && (isNaN(str1)) && (isNaN(str2))) {
+        return str1.includes(str2);
+    } else if ((str1 && str2) && ((!isNaN(str1)) || (!isNaN(str2)))) {
+        return "Value given to function was of Data Type: number";
+    } else if (!str1 || !str2) {
+        return "String is empty";
+    }
+}
+
 
 
 
@@ -32,8 +44,8 @@ function concatenateStrings(str1, str2) {
 module.exports = {
     getCharAt,
     concatenateStrings,
-    /* doesInclude,
-    getIndexOf,
+    doesInclude,
+    /* getIndexOf,
     sliceString,
     splitString,
     convertToLowerCase,
