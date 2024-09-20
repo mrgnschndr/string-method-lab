@@ -14,10 +14,10 @@ const {
     ['concatenateStrings', concatenateStrings, 'hello', 'world', 'helloworld'],
     ['concatenateStrings', concatenateStrings, 12345, 'world', 'Value given to function was of Data Type: number'],
     
-    /* // doesInclude tests (valid and invalid)
+    // doesInclude tests (valid and invalid)
     ['doesInclude', doesInclude, 'hello world', 'world', true],
     ['doesInclude', doesInclude, 'hello world', 123, 'Value given to function was of Data Type: number'],
-    ['doesInclude', doesInclude, '', 'world', 'String is empty'], */
+    ['doesInclude', doesInclude, '', 'world', 'String is empty'],
   
     /* // getIndexOf tests (valid and invalid)
     ['getIndexOf', getIndexOf, 'hello world', 'world', 6],
