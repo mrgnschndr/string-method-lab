@@ -35,6 +35,17 @@ function doesInclude(str1, str2) {
     }
 }
 
+// .indexOf = returns the first index (position of a specified value)
+
+function getIndexOf(str1, str2) {
+    if (str1 && str2 && (isNaN(str1)) && (isNaN(str2))) {
+        return str1.indexOf(str2);
+    } else if ((str1 && str2) && ((!isNaN(str1)) || (!isNaN(str2)))) {
+        return "Value given to function was of Data Type: number";
+    } else if (!str1 || !str2) {
+        return "String is empty";
+    }
+}
 
 
 
@@ -45,8 +56,8 @@ module.exports = {
     getCharAt,
     concatenateStrings,
     doesInclude,
-    /* getIndexOf,
-    sliceString,
+    getIndexOf,
+    /* sliceString,
     splitString,
     convertToLowerCase,
     convertToUpperCase,
