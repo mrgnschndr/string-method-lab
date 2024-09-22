@@ -107,6 +107,21 @@ function trimString(str) {
     }
 }
 
+
+// .replace = searches string for a value and replaces it with the second input
+
+function replaceSubstring(str, strOld, strNew) {
+    if (str && strOld && strNew && (isNaN(str)) && (isNaN(strOld)) && (isNaN(strNew))) {
+        return str.replace(strOld, strNew);
+    } else if (str && strOld && strNew && (!(isNaN(str)) || !(isNaN(strOld)) || !(isNaN(strNew)))) {
+        return "Value given to function was of Data Type: number";
+    } else if ((!(str)) || (!(strOld)) || (!(strNew))) {
+        return "String is empty";
+    }
+}
+
+
+
 module.exports = {
     getCharAt,
     concatenateStrings,
@@ -117,5 +132,5 @@ module.exports = {
     convertToLowerCase,
     convertToUpperCase,
     trimString,
-    /* replaceSubstring */
+    replaceSubstring
 };
