@@ -59,6 +59,18 @@ function sliceString(str, num1, num2) {
     }
 }
 
+// .split = splits a string into an array of substrings
+
+function splitString(str, separator) {
+    if (str && separator && (isNaN(str))) {
+        return str.split(separator);
+    } else if (str && (!isNaN(str))) {
+        return "Value given to function was of Data Type: number";
+    } else if (!str) {
+        return "String is empty";
+    }
+}
+
 
 
 
@@ -68,8 +80,8 @@ module.exports = {
     doesInclude,
     getIndexOf,
     sliceString,
-    /* splitString,
-    convertToLowerCase,
+    splitString,
+    /* convertToLowerCase,
     convertToUpperCase,
     trimString,
     replaceSubstring */
