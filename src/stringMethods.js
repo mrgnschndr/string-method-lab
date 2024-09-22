@@ -35,7 +35,7 @@ function doesInclude(str1, str2) {
     }
 }
 
-// .indexOf = returns the first index (position of a specified value)
+// .indexOf = returns the index (position of a specified value)
 
 function getIndexOf(str1, str2) {
     if (str1 && str2 && (isNaN(str1)) && (isNaN(str2))) {
@@ -47,7 +47,17 @@ function getIndexOf(str1, str2) {
     }
 }
 
+// .slice = returns selected elements 
 
+function sliceString(str, num1, num2) {
+    if (str && (isNaN(str)) && !(isNaN(num1)) && !(isNaN(num2))) {
+        return str.slice(num1, num2);
+    } else if (str && (!isNaN(str))) {
+        return "Value given to function was of Data Type: number";
+    } else if (!str) {
+        return "String is empty";
+    }
+}
 
 
 
@@ -57,8 +67,8 @@ module.exports = {
     concatenateStrings,
     doesInclude,
     getIndexOf,
-    /* sliceString,
-    splitString,
+    sliceString,
+    /* splitString,
     convertToLowerCase,
     convertToUpperCase,
     trimString,
