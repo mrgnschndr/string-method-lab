@@ -9,6 +9,8 @@ function getCharAt(str, num) {
         return "String is empty";
     } else if (str.length == 1) {
         return str;
+    } else {
+        return "Something went wrong."
     }
 }
 
@@ -19,6 +21,8 @@ function concatenateStrings(str1, str2) {
         return str1.concat(str2);
     } else if ((str1 && str2) && ((!isNaN(str1)) || (!isNaN(str2)))) {
         return "Value given to function was of Data Type: number";
+    } else {
+        return "Something went wrong."
     }
 }
 
@@ -32,6 +36,8 @@ function doesInclude(str1, str2) {
         return "Value given to function was of Data Type: number";
     } else if (!str1 || !str2) {
         return "String is empty";
+    } else {
+        return "Something went wrong."
     }
 }
 
@@ -44,6 +50,8 @@ function getIndexOf(str1, str2) {
         return "Value given to function was of Data Type: number";
     } else if (!str1 || !str2) {
         return "String is empty";
+    } else {
+        return "Something went wrong."
     }
 }
 
@@ -56,6 +64,8 @@ function sliceString(str, num1, num2) {
         return "Value given to function was of Data Type: number";
     } else if (!str) {
         return "String is empty";
+    } else {
+        return "Something went wrong."
     }
 }
 
@@ -68,6 +78,8 @@ function splitString(str, separator) {
         return "Value given to function was of Data Type: number";
     } else if (!str) {
         return "String is empty";
+    } else {
+        return "Something went wrong."
     }
 }
 
@@ -80,6 +92,8 @@ function convertToLowerCase(str) {
         return "Value given to function was of Data Type: number";
     } else if (!str) {
         return "String is empty";
+    } else {
+        return "Something went wrong."
     }
 }
 
@@ -92,6 +106,8 @@ function convertToUpperCase(str) {
         return "Value given to function was of Data Type: number";
     } else if (!str) {
         return "String is empty";
+    } else {
+        return "Something went wrong."
     }
 }
 
@@ -104,6 +120,8 @@ function trimString(str) {
         return "Value given to function was of Data Type: number";
     } else if (!str) {
         return "String is empty";
+    } else {
+        return "Something went wrong."
     }
 }
 
@@ -117,6 +135,8 @@ function replaceSubstring(str, strOld, strNew) {
         return "Value given to function was of Data Type: number";
     } else if ((!(str)) || (!(strOld)) || (!(strNew))) {
         return "String is empty";
+    } else {
+        return "Something went wrong."
     }
 }
 
