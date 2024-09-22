@@ -24,10 +24,10 @@ const {
     ['getIndexOf', getIndexOf, 12345, 'world', 'Value given to function was of Data Type: number'],
     ['getIndexOf', getIndexOf, '', 'world', 'String is empty'],
   
-    /* // sliceString tests (valid and invalid)
+    // sliceString tests (valid and invalid)
     ['sliceString', sliceString, 'hello world', 0, 5, 'hello'],
     ['sliceString', sliceString, 12345, 0, 5, 'Value given to function was of Data Type: number'],
-    ['sliceString', sliceString, '', 0, 5, 'String is empty'], */
+    ['sliceString', sliceString, '', 0, 5, 'String is empty'],
   
     /* // splitString tests (valid and invalid)
     ['splitString', splitString, 'hello world', ' ', ['hello', 'world']],
