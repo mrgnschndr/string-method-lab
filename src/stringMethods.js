@@ -83,6 +83,18 @@ function convertToLowerCase(str) {
     }
 }
 
+// .toUpperCase = converts a string to uppercase letters
+
+function convertToUpperCase(str) {
+    if (str && (isNaN(str))) {
+        return str.toUpperCase();
+    } else if (str && (!isNaN(str))) {
+        return "Value given to function was of Data Type: number";
+    } else if (!str) {
+        return "String is empty";
+    }
+}
+
 
 
 module.exports = {
@@ -93,7 +105,7 @@ module.exports = {
     sliceString,
     splitString,
     convertToLowerCase,
-    /* convertToUpperCase,
-    trimString,
+    convertToUpperCase,
+    /* trimString,
     replaceSubstring */
 };
