@@ -95,7 +95,17 @@ function convertToUpperCase(str) {
     }
 }
 
+// .trim = removes whitespace from both sides of a string
 
+function trimString(str) {
+    if (str && (isNaN(str))) {
+        return str.trim();
+    } else if (str && (!isNaN(str))) {
+        return "Value given to function was of Data Type: number";
+    } else if (!str) {
+        return "String is empty";
+    }
+}
 
 module.exports = {
     getCharAt,
@@ -106,6 +116,6 @@ module.exports = {
     splitString,
     convertToLowerCase,
     convertToUpperCase,
-    /* trimString,
-    replaceSubstring */
+    trimString,
+    /* replaceSubstring */
 };
