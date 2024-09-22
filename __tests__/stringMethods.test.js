@@ -34,10 +34,10 @@ const {
     ['splitString', splitString, 12345, ' ', 'Value given to function was of Data Type: number'],
     ['splitString', splitString, '', ' ', 'String is empty'],
   
-    /* // convertToLowerCase tests (valid and invalid)
+    // convertToLowerCase tests (valid and invalid)
     ['convertToLowerCase', convertToLowerCase, 'HELLO', null, 'hello'],
     ['convertToLowerCase', convertToLowerCase, 12345, null, 'Value given to function was of Data Type: number'],
-    ['convertToLowerCase', convertToLowerCase, '', null, 'String is empty'], */
+    ['convertToLowerCase', convertToLowerCase, '', null, 'String is empty'],
   
     /* // convertToUpperCase tests (valid and invalid)
     ['convertToUpperCase', convertToUpperCase, 'hello', null, 'HELLO'],

@@ -71,6 +71,17 @@ function splitString(str, separator) {
     }
 }
 
+// .toLowerCase = converts a string to lowercase letters
+
+function convertToLowerCase(str) {
+    if (str && (isNaN(str))) {
+        return str.toLowerCase();
+    } else if (str && (!isNaN(str))) {
+        return "Value given to function was of Data Type: number";
+    } else if (!str) {
+        return "String is empty";
+    }
+}
 
 
 
@@ -81,8 +92,8 @@ module.exports = {
     getIndexOf,
     sliceString,
     splitString,
-    /* convertToLowerCase,
-    convertToUpperCase,
+    convertToLowerCase,
+    /* convertToUpperCase,
     trimString,
     replaceSubstring */
 };
